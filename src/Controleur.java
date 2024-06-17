@@ -43,4 +43,14 @@ public class Controleur {
         System.out.println("Affichage fenete Connexion");
     }
 
+    @FXML
+    private void handleCompetitionLiEp(ActionEvent event) throws IOException{
+        this.vue.modeCompetitionLiEp();
+    }
+
+    @FXML
+    private void handleCompetitionClassement(ActionEvent event) throws IOException{
+        this.vue.modeCompetitionClassement();
+    }
+
 }

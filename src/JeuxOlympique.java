@@ -60,7 +60,22 @@ public class JeuxOlympique extends Application{
         return root;
     }
 
-    
+    public BorderPane pageCompetitionClassement() throws IOException{
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetitionClassement.fxml"));
+        loader.setController(this.controleur);
+        BorderPane root = loader.load();
+        return root;
+    }
+
+    public BorderPane pageCompetitionLiEp() throws IOException{
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetitionListeEp.fxml"));
+        loader.setController(this.controleur);
+        BorderPane root = loader.load();
+        return root;
+    }
+
+
+
 
     public void modeConnexion() throws IOException{
         this.scene.setRoot(this.pageConnexion());
@@ -72,6 +87,14 @@ public class JeuxOlympique extends Application{
 
     public void modeCompetition() throws IOException{
         this.scene.setRoot(this.pageCompetition());
+    }
+
+    public void modeCompetitionLiEp() throws IOException{
+        this.scene.setRoot(this.pageCompetitionLiEp());
+    }
+
+    public void modeCompetitionClassement() throws IOException{
+        this.scene.setRoot(this.pageCompetitionClassement());
     }
 
     public static void main(String[] args) {

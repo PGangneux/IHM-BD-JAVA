@@ -36,7 +36,7 @@
               <buttons>
                 <Button fx:id="btnCompetitions" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: lime;" text="Compétitions" />
                   <Button fx:id="btnClassement" mnemonicParsing="false" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
-                  <Button fx:id="btnAthlete" mnemonicParsing="false" prefHeight="50.0" text="Athlètes" />
+                  <Button fx:id="btnParticipant" mnemonicParsing="false" onAction="#handleParticipant" prefHeight="50.0" text="Participant" />
               </buttons>
             </ButtonBar>
             <ButtonBar prefHeight="100.0" prefWidth="336.0">
@@ -104,7 +104,7 @@
                   <Label text="score/points" GridPane.columnIndex="3" />
                </children>
             </GridPane>
-            <Button fx:id="moins" mnemonicParsing="false" text="moins">
+            <Button fx:id="moins" mnemonicParsing="false" onAction="#handleCompetition" text="moins">
                <VBox.margin>
                   <Insets left="500.0" />
                </VBox.margin>
