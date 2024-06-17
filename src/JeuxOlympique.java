@@ -36,8 +36,8 @@ public class JeuxOlympique extends Application{
         return root;
     }
 
-    public BorderPane pageAthlete() throws IOException{
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageAthlete.fxml"));
+    public BorderPane pageParticipant() throws IOException{
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageParticipant.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
         this.stage.setMinWidth(850);
@@ -46,8 +46,8 @@ public class JeuxOlympique extends Application{
         return root;
     }
 
-    public BorderPane pageEpreuve() throws IOException{
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageEpreuve.fxml"));
+    public BorderPane pageCompetition() throws IOException{
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetition.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
         this.stage.setMinWidth(850);
@@ -55,17 +55,19 @@ public class JeuxOlympique extends Application{
         this.stage.setMaximized(true);
         return root;
     }
+
+    
 
     public void modeConnexion() throws IOException{
         this.scene.setRoot(this.pageConnexion());
     }
 
-    public void modeAthlete() throws IOException{
-        this.scene.setRoot(this.pageAthlete());
+    public void modeParticipant() throws IOException{
+        this.scene.setRoot(this.pageParticipant());
     }
 
-    public void modeEpreuve() throws IOException{
-        this.scene.setRoot(this.pageEpreuve());
+    public void modeCompetition() throws IOException{
+        this.scene.setRoot(this.pageCompetition());
     }
 
     public static void main(String[] args) {
