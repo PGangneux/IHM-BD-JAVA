@@ -22,8 +22,19 @@ public class Controleur {
 
     @FXML
     private void handleConnexion(ActionEvent event) throws IOException{
-        this.vue.modeAthlete();
+        this.vue.modeParticipant();
         System.out.println("Affichage fenetre Participants");
+    }
+
+    @FXML
+
+    private void handleCompetition(ActionEvent event) throws IOException{
+        this.vue.modeCompetition();
+    }
+
+    @FXML
+    private void handleParticipant(ActionEvent event) throws IOException{
+        this.vue.modeParticipant();
     }
 
     @FXML
@@ -31,4 +42,5 @@ public class Controleur {
         this.vue.modeConnexion();
         System.out.println("Affichage fenete Connexion");
     }
+
 }
