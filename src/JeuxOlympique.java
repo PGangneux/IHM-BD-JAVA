@@ -47,6 +47,8 @@ public class JeuxOlympique extends Application{
         this.stage.setMinWidth(850);
         this.stage.setMinHeight(450);
         this.stage.setMaximized(true);
+        this.stage.setMaxWidth(1920);
+        this.stage.setMaxHeight(1800);
         return root;
     }
 

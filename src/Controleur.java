@@ -27,7 +27,6 @@ public class Controleur {
     }
 
     @FXML
-
     private void handleCompetition(ActionEvent event) throws IOException{
         this.vue.modeCompetition();
     }
