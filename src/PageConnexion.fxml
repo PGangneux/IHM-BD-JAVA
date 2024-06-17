@@ -39,7 +39,7 @@
             <Insets bottom="25.0" left="60.0" />
          </VBox.margin>
       </PasswordField>
-      <Button fx:id="btnCo" mnemonicParsing="false" text="Se connecter">
+      <Button fx:id="btnCo" onAction="#handleConnexion" mnemonicParsing="false" text="Se connecter">
          <VBox.margin>
             <Insets bottom="15.0" left="100.0" />
          </VBox.margin>
