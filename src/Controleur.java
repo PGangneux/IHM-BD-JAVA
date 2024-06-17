@@ -22,11 +22,23 @@ public class Controleur {
 
     @FXML
     private void handleConnexion(ActionEvent event) throws IOException{
-        this.vue.modeAthlete();
+        this.vue.modeParticipant();
+    }
+
+    @FXML
+
+    private void handleCompetition(ActionEvent event) throws IOException{
+        this.vue.modeCompetition();
+    }
+
+    @FXML
+    private void handleParticipant(ActionEvent event) throws IOException{
+        this.vue.modeParticipant();
     }
 
     @FXML
     private void handleAccueil(ActionEvent event) throws IOException{
         this.vue.modeConnexion();
     }
+
 }
