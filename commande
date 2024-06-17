@@ -1,0 +1,2 @@
+javac --module-path /usr/share/openjfx/lib/ --add-modules javafx.controls --add-modules javafx.fxml 
+java --module-path /usr/share/openjfx/lib/ --add-modules javafx.controls --add-modules javafx.fxml
