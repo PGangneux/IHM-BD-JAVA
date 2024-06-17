@@ -13,7 +13,7 @@ public class PageConnexion extends Application {
 
     @Override
     public void start(Stage primarystage) throws Exception{
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageConnexion.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("fxml/PageConnexion.fxml"));
         VBox root = loader.load();
         Scene maiScene = new Scene(root);
         primarystage.setScene(maiScene);
