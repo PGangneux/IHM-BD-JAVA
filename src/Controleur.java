@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -9,6 +7,9 @@ import javafx.scene.control.Button;
 public class Controleur {
     @FXML
     private Button btnCo;
+
+    @FXML
+    private Button btnAccueil;
 
     private JeuxOlympique vue;
 
@@ -22,5 +23,10 @@ public class Controleur {
     @FXML
     private void handleConnexion(ActionEvent event) throws IOException{
         this.vue.modeAthlete();
+    }
+
+    @FXML
+    private void handleAccueil(ActionEvent event) throws IOException{
+        this.vue.modeConnexion();
     }
 }

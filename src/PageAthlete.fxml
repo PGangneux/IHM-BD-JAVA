@@ -19,11 +19,11 @@
          <children>
             <ButtonBar>
               <buttons>
-                  <Button fx:id="btnAccueil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                  <Button fx:id="btnAccueil" onAction="#handleAccueil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
                      <graphic>
                         <ImageView blendMode="MULTIPLY" fitHeight="91.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../SAE_Vue/ImageSAE/logoJO.jpg" />
+                              <Image url="@../img/logoJO.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -46,7 +46,7 @@
                      <graphic>
                         <ImageView blendMode="MULTIPLY" cache="true" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../SAE_Vue/ImageSAE/logoParam.png" />
+                              <Image url="@../img/logoParam.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -55,7 +55,7 @@
                      <graphic>
                         <ImageView blendMode="MULTIPLY" cache="true" fitHeight="62.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../SAE_Vue/ImageSAE/logoUtilisateur.png" />
+                              <Image url="@../img/logoUtilisateur.png" />
                            </image>
                         </ImageView>
                      </graphic>
