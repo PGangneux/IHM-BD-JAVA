@@ -13,7 +13,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Page de Connexion">
+      <Label fx:id="labelPageCo" alignment="TOP_LEFT" contentDisplay="CENTER" text="Page de Connexion">
          <VBox.margin>
             <Insets bottom="30.0" left="50.0" />
          </VBox.margin>
@@ -21,30 +21,30 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <ImageView fitHeight="102.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgJo" fitHeight="102.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@java/img/Jo.jpg" />
+            <Image url="@../../java/img/Jo.jpg" />
          </image>
          <VBox.margin>
             <Insets bottom="25.0" left="75.0" />
          </VBox.margin>
       </ImageView>
-      <TextField maxHeight="1.7976931348623157E308" maxWidth="172.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="170.0" promptText="Identifiant">
+      <TextField fx:id="identifiant" maxHeight="1.7976931348623157E308" maxWidth="172.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="170.0" promptText="Identifiant">
          <VBox.margin>
             <Insets bottom="15.0" left="60.0" />
          </VBox.margin>
       </TextField>
-      <PasswordField maxWidth="171.0" prefHeight="24.0" prefWidth="170.0" promptText=" Mot de Passe">
+      <PasswordField fx:id="mdp" maxWidth="171.0" prefHeight="24.0" prefWidth="170.0" promptText=" Mot de Passe">
          <VBox.margin>
             <Insets bottom="25.0" left="60.0" />
          </VBox.margin>
       </PasswordField>
-      <Button mnemonicParsing="false" text="Se connecter">
+      <Button fx:id="btnCo" mnemonicParsing="false" text="Se connecter">
          <VBox.margin>
             <Insets bottom="15.0" left="100.0" />
          </VBox.margin>
       </Button>
-      <Button cache="true" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-underline: true; -fx-font-weight: bold;" text="Mots de passe oublié ?">
+      <Button fx:id="btnMdpOublie" cache="true" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-underline: true; -fx-font-weight: bold;" text="Mots de passe oublié ?">
          <VBox.margin>
             <Insets left="60.0" />
          </VBox.margin>
