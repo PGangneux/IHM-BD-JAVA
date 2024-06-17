@@ -27,9 +27,12 @@ public class Controleur {
     }
 
     @FXML
-    private void handleCompetition(ActionEvent event) throws IOException{
-        this.vue.modeCompetition();
+    private void handleAccueil(ActionEvent event) throws IOException{
+        this.vue.modeConnexion();
+        System.out.println("Affichage fenete Connexion");
     }
+
+    
 
     @FXML
     private void handleParticipant(ActionEvent event) throws IOException{
@@ -37,10 +40,10 @@ public class Controleur {
     }
 
     @FXML
-    private void handleAccueil(ActionEvent event) throws IOException{
-        this.vue.modeConnexion();
-        System.out.println("Affichage fenete Connexion");
+    private void handleCompetition(ActionEvent event) throws IOException{
+        this.vue.modeCompetition();
     }
+
 
     @FXML
     private void handleCompetitionLiEp(ActionEvent event) throws IOException{
@@ -50,6 +53,11 @@ public class Controleur {
     @FXML
     private void handleCompetitionClassement(ActionEvent event) throws IOException{
         this.vue.modeCompetitionClassement();
+    }
+
+    @FXML
+    private void handlePays(ActionEvent event) throws IOException{
+        this.vue.modePays();
     }
 
 }
