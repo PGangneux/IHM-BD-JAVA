@@ -23,7 +23,7 @@
       </Label>
       <ImageView fx:id="imgJo" fitHeight="102.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../java/img/Jo.jpg" />
+            <Image url="@../img/logoJO.jpg" />
          </image>
          <VBox.margin>
             <Insets bottom="25.0" left="75.0" />
