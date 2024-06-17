@@ -6,8 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PageEpreuve",
+            "request": "launch",
+            "mainClass": "PageEpreuve",
+            "projectName": "IHM-BD-JAVA_2ef0b263"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
+            "vmArgs": "--module-path /usr/share/openjfx/lib/ --add-modules javafx.controls,javafx.fxml",
             "mainClass": "${file}"
         }
     ]

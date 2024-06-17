@@ -4,8 +4,6 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -68,64 +66,8 @@
    <left>
       <VBox prefHeight="349.0" prefWidth="214.0" style="-fx-border-color: black; -fx-border-style: solid;" BorderPane.alignment="CENTER">
          <children>
-            <SplitMenuButton fx:id="menuHommeEpreuve" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="200.0" text="Homme">
-              <items>
-                  <MenuItem mnemonicParsing="false" text="Natation">
-                     <graphic>
-                        <SplitMenuButton fx:id="menuNatationH" mnemonicParsing="false" text="Natation" />
-                     </graphic>
-                  </MenuItem>
-                <MenuItem mnemonicParsing="false" text="Handball">
-                     <graphic>
-                        <Button fx:id="btnHandballH" mnemonicParsing="false" text="Hanball" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Volleyball">
-                     <graphic>
-                        <Button fx:id="btnVolleyballH" mnemonicParsing="false" text="Volleyball" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Escrime">
-                     <graphic>
-                        <SplitMenuButton fx:id="menuEscrimeH" mnemonicParsing="false" text="Escrime" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Athlétisme">
-                     <graphic>
-                        <SplitMenuButton fx:id="menuAthletismeH" mnemonicParsing="false" text="Athlétisme" />
-                     </graphic>
-                  </MenuItem>
-              </items>
-            </SplitMenuButton>
-            <SplitMenuButton fx:id="menuFemmeEpreuve" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="200.0" text="Femme">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Natation">
-                     <graphic>
-                        <SplitMenuButton fx:id="menuNatationF" mnemonicParsing="false" text="Natation" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Handball">
-                     <graphic>
-                        <Button fx:id="btnHandballF" mnemonicParsing="false" text="Hanball" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Volleyball">
-                     <graphic>
-                        <Button fx:id="btnVolleyballF" mnemonicParsing="false" text="Volleyball" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Escrime">
-                     <graphic>
-                        <SplitMenuButton fx:id="menuEscrimeF" mnemonicParsing="false" text="Escrime" />
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Athlétisme">
-                     <graphic>
-                        <SplitMenuButton fx:id="menuAthletismeF" mnemonicParsing="false" text="Athlétisme" />
-                     </graphic>
-                  </MenuItem>
-               </items>
-            </SplitMenuButton>
+            <ComboBox prefHeight="24.0" prefWidth="200.0" promptText="Homme" />
+            <ComboBox prefHeight="24.0" prefWidth="200.0" promptText="Femme" />
          </children>
       </VBox>
    </left>
