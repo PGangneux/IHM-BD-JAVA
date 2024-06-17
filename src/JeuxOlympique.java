@@ -17,8 +17,7 @@ public class JeuxOlympique extends Application{
     @Override
     public void init() throws IOException{
         this.controleur = new Controleur(this);
-        VBox root = pageConnexion();
-        this.scene = new Scene(root);
+        this.scene = new Scene(new Pane(), 400, 300);
     }
 
     @Override
@@ -26,6 +25,7 @@ public class JeuxOlympique extends Application{
         this.stage = stage;
         this.stage.setScene(this.scene);
         this.stage.setTitle("Jeux Olympique");
+        this.modeConnexion();
         this.stage.show();
     }
 
@@ -33,6 +33,10 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageConnexion.fxml"));
         loader.setController(this.controleur);
         VBox root = loader.load();
+        this.stage.setMinWidth(300);
+        this.stage.setMinHeight(400);
+        this.stage.setMaxWidth(300);
+        this.stage.setMaxHeight(400);
         return root;
     }
 
