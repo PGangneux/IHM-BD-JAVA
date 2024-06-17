@@ -41,4 +41,14 @@ public class Controleur {
         this.vue.modeConnexion();
     }
 
+    @FXML
+    private void handleCompetitionLiEp(ActionEvent event) throws IOException{
+        this.vue.modeCompetitionLiEp();
+    }
+
+    @FXML
+    private void handleCompetitionClassement(ActionEvent event) throws IOException{
+        this.vue.modeCompetitionClassement();
+    }
+
 }
