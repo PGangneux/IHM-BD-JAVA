@@ -23,10 +23,12 @@ public class Controleur {
     @FXML
     private void handleConnexion(ActionEvent event) throws IOException{
         this.vue.modeAthlete();
+        System.out.println("Affichage fenetre Participants");
     }
 
     @FXML
     private void handleAccueil(ActionEvent event) throws IOException{
         this.vue.modeConnexion();
+        System.out.println("Affichage fenete Connexion");
     }
 }
