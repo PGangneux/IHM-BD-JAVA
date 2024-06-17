@@ -142,7 +142,7 @@
                         <Insets bottom="10.0" left="10.0" top="10.0" />
                      </HBox.margin>
                   </TextField>
-                  <ComboBox fx:id="trie" accessibleRole="CHECK_MENU_ITEM" prefWidth="150.0" promptText="Trier par">
+                  <ComboBox fx:id="trie" accessibleRole="CHECK_MENU_ITEM" prefWidth="150.0" promptText="Trier par ...">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
