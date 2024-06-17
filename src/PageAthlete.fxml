@@ -32,7 +32,7 @@
             </ButtonBar>
             <ButtonBar>
               <buttons>
-                <Button fx:id="btnCompetition" mnemonicParsing="false" prefHeight="50.0" text="Compétition" />
+                <Button fx:id="btnCompetition" mnemonicParsing="false" prefHeight="50.0" text="Compétitions" />
                   <Button fx:id="btnClassement" mnemonicParsing="false" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="btnAthlete" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: lime;" text="Athlètes" />
               </buttons>
