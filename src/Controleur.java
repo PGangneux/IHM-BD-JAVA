@@ -68,8 +68,9 @@ public class Controleur {
         else{
             sport1.setVisible(true);
         }
+    }
         
-
+    @FXML
     private void handlePays(ActionEvent event) throws IOException{
         this.vue.modePays();
 
