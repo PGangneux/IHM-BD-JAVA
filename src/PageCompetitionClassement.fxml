@@ -21,9 +21,9 @@
          <children>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
               <buttons>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                  <Button fx:id="btnAcceuil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
                      <graphic>
-                        <ImageView fx:id="btnAccueil" blendMode="MULTIPLY" fitHeight="91.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView blendMode="MULTIPLY" fitHeight="91.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/logoJO.jpg" />
                            </image>

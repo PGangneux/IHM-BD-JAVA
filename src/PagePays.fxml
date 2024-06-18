@@ -22,7 +22,7 @@
          <children>
             <ButtonBar>
               <buttons>
-                  <Button fx:id="btnAccueil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                  <Button fx:id="btnAcceuil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
                      <graphic>
                         <ImageView blendMode="MULTIPLY" fitHeight="91.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
