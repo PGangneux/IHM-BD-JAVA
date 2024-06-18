@@ -50,8 +50,8 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageParticipant.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
-        this.stage.setMinWidth(850);
-        this.stage.setMinHeight(450);
+        this.stage.setMinWidth(890);
+        this.stage.setMinHeight(500);
         this.stage.setMaximized(true);
         return root;
     }
@@ -60,8 +60,8 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetition.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
-        this.stage.setMinWidth(850);
-        this.stage.setMinHeight(450);
+        this.stage.setMinWidth(890);
+        this.stage.setMinHeight(500);
         this.stage.setMaximized(true);
         return root;
     }
@@ -70,8 +70,8 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetitionClassement.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
-        this.stage.setMinWidth(850);
-        this.stage.setMinHeight(450);
+        this.stage.setMinWidth(890);
+        this.stage.setMinHeight(500);
         this.stage.setMaximized(true);
         return root;
     }
@@ -80,8 +80,8 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetitionListeEp.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
-        this.stage.setMinWidth(850);
-        this.stage.setMinHeight(450);
+        this.stage.setMinWidth(890);
+        this.stage.setMinHeight(500);
         this.stage.setMaximized(true);
         return root;
     }
@@ -90,8 +90,8 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PagePays.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
-        this.stage.setMinWidth(850);
-        this.stage.setMinHeight(450);
+        this.stage.setMinWidth(890);
+        this.stage.setMinHeight(500);
         this.stage.setMaximized(true);
         return root;
     }
