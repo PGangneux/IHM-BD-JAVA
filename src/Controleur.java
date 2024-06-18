@@ -3,6 +3,7 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 
 public class Controleur {
     @FXML
@@ -10,6 +11,9 @@ public class Controleur {
 
     @FXML
     private Button btnAccueil;
+
+    @FXML
+    private RadioButton sport1;
 
     private JeuxOlympique vue;
 
@@ -55,9 +59,20 @@ public class Controleur {
         this.vue.modeCompetitionClassement();
     }
 
+
     @FXML
+    private void handleHommeEnable(ActionEvent event) throws IOException{
+        if (sport1.isVisible()){
+            sport1.setVisible(false);
+        }
+        else{
+            sport1.setVisible(true);
+        }
+        
+
     private void handlePays(ActionEvent event) throws IOException{
         this.vue.modePays();
+
     }
 
 }

@@ -3,8 +3,10 @@
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -14,10 +16,16 @@ public class JeuxOlympique extends Application{
     private Controleur controleur;
     private Scene scene;
     private Stage stage;
-    @Override
+    
+
+
+
+
+   @Override
     public void init() throws IOException{
         this.controleur = new Controleur(this);
         this.scene = new Scene(new Pane(), 400, 300);
+        
     }
 
     @Override
