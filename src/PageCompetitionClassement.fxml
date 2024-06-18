@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
          <children>
@@ -35,7 +35,7 @@
             <ButtonBar prefHeight="101.0" prefWidth="557.0">
               <buttons>
                 <Button fx:id="btnCompetitions" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: lime;" text="Compétitions" />
-                  <Button fx:id="btnClassement" mnemonicParsing="false" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnClassement" mnemonicParsing="false" onAction="#handlePays" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="btnParticipant" mnemonicParsing="false" onAction="#handleParticipant" prefHeight="50.0" text="Participant" />
               </buttons>
             </ButtonBar>
