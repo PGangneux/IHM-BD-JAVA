@@ -3,8 +3,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -64,8 +64,10 @@
    <left>
       <VBox prefHeight="349.0" prefWidth="214.0" style="-fx-border-color: black; -fx-border-style: solid;" BorderPane.alignment="CENTER">
          <children>
-            <ComboBox prefHeight="24.0" prefWidth="200.0" promptText="Homme" />
-            <ComboBox prefHeight="24.0" prefWidth="200.0" promptText="Femme" />
+            <Button fx:id="homme" mnemonicParsing="false" onAction="#handleHommeEnable" text="H" />
+            <RadioButton fx:id="sport1" mnemonicParsing="false" text="handball" visible="false" />
+            <RadioButton mnemonicParsing="false" text="RadioButton" />
+            <Button mnemonicParsing="false" text="F" />
          </children>
       </VBox>
    </left>
