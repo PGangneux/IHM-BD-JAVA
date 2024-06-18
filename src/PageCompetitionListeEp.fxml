@@ -19,7 +19,7 @@
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
          <children>
-            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+            <ButtonBar>
               <buttons>
                   <Button fx:id="btnAcceuil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
                      <graphic>
@@ -32,14 +32,14 @@
                   </Button>
               </buttons>
             </ButtonBar>
-            <ButtonBar prefHeight="101.0" prefWidth="557.0">
+            <ButtonBar>
               <buttons>
                 <Button fx:id="btnCompetitions" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: lime;" text="Compétitions" />
                   <Button fx:id="btnClassement" mnemonicParsing="false" onAction="#handlePays" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="btnAthlete" mnemonicParsing="false" onAction="#handleParticipant" prefHeight="50.0" text="Participant" />
               </buttons>
             </ButtonBar>
-            <ButtonBar prefHeight="100.0" prefWidth="336.0">
+            <ButtonBar>
               <buttons>
                   <Button fx:id="btnParam" contentDisplay="TOP" mnemonicParsing="false" text="Paramètre">
                      <graphic>
