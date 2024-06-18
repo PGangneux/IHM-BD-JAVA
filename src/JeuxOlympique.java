@@ -35,8 +35,6 @@ public class JeuxOlympique extends Application{
         VBox root = loader.load();
         this.stage.setMinWidth(300);
         this.stage.setMinHeight(400);
-        this.stage.setMaxWidth(300);
-        this.stage.setMaxHeight(400);
         return root;
     }
 
@@ -47,8 +45,6 @@ public class JeuxOlympique extends Application{
         this.stage.setMinWidth(850);
         this.stage.setMinHeight(450);
         this.stage.setMaximized(true);
-        this.stage.setMaxWidth(1920);
-        this.stage.setMaxHeight(1800);
         return root;
     }
 
@@ -66,6 +62,9 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetitionClassement.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
+        this.stage.setMinWidth(850);
+        this.stage.setMinHeight(450);
+        this.stage.setMaximized(true);
         return root;
     }
 
@@ -73,6 +72,9 @@ public class JeuxOlympique extends Application{
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("PageCompetitionListeEp.fxml"));
         loader.setController(this.controleur);
         BorderPane root = loader.load();
+        this.stage.setMinWidth(850);
+        this.stage.setMinHeight(450);
+        this.stage.setMaximized(true);
         return root;
     }
 
