@@ -12,17 +12,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
          <children>
             <ButtonBar>
               <buttons>
-                  <Button fx:id="btnAccueil" mnemonicParsing="false" onAction="#handleAccueil" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                  <Button fx:id="btnAccueil" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: transparent;">
                      <graphic>
                         <ImageView blendMode="MULTIPLY" fitHeight="91.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../SAE_Vue/ImageSAE/logoJO.jpg" />
+                              <Image url="@../img/logoJO.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -32,7 +32,7 @@
             <ButtonBar>
               <buttons>
                 <Button fx:id="btnCompetitions" mnemonicParsing="false" prefHeight="50.0" style="-fx-background-color: lime;" text="Compétitions" />
-                  <Button fx:id="btnClassement" mnemonicParsing="false" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnClassement" mnemonicParsing="false" onAction="#handlePays" prefHeight="50.0" text="Classement des pays" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="btnParticipant" mnemonicParsing="false" onAction="#handleParticipant" prefHeight="50.0" text="Participant" />
               </buttons>
             </ButtonBar>
@@ -42,16 +42,16 @@
                      <graphic>
                         <ImageView blendMode="MULTIPLY" cache="true" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../SAE_Vue/ImageSAE/logoParam.png" />
+                              <Image url="@../img/logoParam.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                <Button fx:id="btnCompte" contentDisplay="TOP" mnemonicParsing="false" text="Mon Compte">
+                <Button fx:id="btnCompte" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleAccueil" text="Mon Compte">
                      <graphic>
                         <ImageView blendMode="MULTIPLY" cache="true" fitHeight="62.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../SAE_Vue/ImageSAE/logoUtilisateur.png" />
+                              <Image url="@../img/logoUtilisateur.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -64,6 +64,7 @@
    <left>
       <VBox prefHeight="349.0" prefWidth="214.0" style="-fx-border-color: black; -fx-border-style: solid;" BorderPane.alignment="CENTER">
          <children>
+
             <Button fx:id="homme" mnemonicParsing="false" onAction="#handleHommeEnable" text="H" />
             <RadioButton fx:id="sport1" mnemonicParsing="false" text="handball" visible="false" />
             <RadioButton mnemonicParsing="false" text="RadioButton" />
